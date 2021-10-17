@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    width: 400px;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+i {
+    margin-right: 1rem;
+    color: white;
+}
+
+.links div {
+    border: 2px solid white;
+    border-radius: 0.67rem;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 auto 1rem;
+}
+
+.links div:hover {
+    background: linear-gradient(to left, #823cce 0%, #3f85fd 100%);
+    border: 3px solid white;
+    transition: all 0.5;
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/*Stars effect*/
+.stars {
+    position: absolute;
+    z-index: -1;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.801);
+    top: calc(1px * var(--y));
+    left:calc(1px * var(--x));
+    animation: move linear 100s infinite;
+}
+
+.stars1 {
+    position: absolute;
+    z-index: -1;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 232, 101, 0.651);
+    top: calc(1px * var(--y));
+    left:calc(1px * var(--x));
+    animation: move linear 100s infinite;
+}
+
+/*keyframes*/
+/*stars movement*/
+@keyframes move{
+    from{
+        top: calc(1px * var(--y));
+        left:calc(1px * var(--x));
+    }
+    to{
+        top: calc(1.5px * var(--y));
+        left:calc(1.5px * var(--x));
+    }
+}
+
+/*media queries*/
+@media screen and (max-width: 580px) {
+    html {
+        font-size: 80%;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .links div {
+        padding: 1rem;
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 70%;
+    }
+
+    .links div {
+        padding: 1rem;
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+}

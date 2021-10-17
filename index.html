@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Links Page</title>
+</head>
+<body>
+    <section class="intro">
+        <!--Intro block-->
+        <img class="logo animate__animated animate__zoomIn" src="images/follows.png" alt="Follow me!">
+        
+    </section>
+    <section class="links">
+        <!--Links block-->
+        <a href="https://www.linkedin.com/in/melisa-di-giacomo/" target="_blank"><div class="animate__animated animate__backInUp"><i class="fab fa-linkedin"></i>LinkedIn</div></a>
+        <a href="https://github.com/melisadigiacomo" target="_blank"><div class="animate__animated animate__backInUp"><i class="fab fa-github"></i>GitHub</div></a>
+        <a href="https://www.researchgate.net/profile/Melisa-Di-Giacomo" target="_blank"><div class="animate__animated animate__backInUp"><i class="fab fa-researchgate"></i>Research Gate</div></a>
+        <a href="https://twitter.com/melisadigiacomo" target="_blank"><div class="animate__animated animate__backInUp"><i class="fab fa-twitter"></i>Twitter</div></a>
+        <a href="https://melisagallery.netlify.app/" target="_blank"><div class="animate__animated animate__backInUp"><i class="fa fa-palette"></i>My Artwork Gallery</div></a>
+    </section>
+
+    <section class="sign">
+        <p class="animate__animated animate__backInUp">Melisa Di Giacomo © | 2021</p>
+    </section>
+
+    <script>
+        for(i=0;i<150;i++){
+            document.querySelector("body").innerHTML += `
+            <div class="stars"
+            style="--x:${window.innerWidth*Math.random()};--y:${window.innerHeight*Math.random()}"
+            </div>`
+        }
+        for(i=0;i<150;i++){
+            document.querySelector("body").innerHTML += `
+            <div class="stars1"
+            style="--x:${window.innerWidth*Math.random()};--y:${window.innerHeight*Math.random()}"
+            </div>`
+        }
+    </script>
+</body>
+</html>
